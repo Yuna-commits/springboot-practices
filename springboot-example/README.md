@@ -23,11 +23,15 @@
 4. 애플리케이션의 타입이 웹애플리케이션인 경우
 
 	> 1) Spring MVC
+	
 		- 내장(embeded) 서버 (`**TomcatEmbededServiceServletContainer**`) 인스턴스 생성
+		
 		- 서버 인스턴스에 웹애플리케이션 배포
+		
 		- 서버 인스턴스 실행
 		
 	> 2) Spring Reactive Web
+	
 		- Reactor Core(spring-boot-starter-webflux)의 Not-Blocking I/O Netty 엔진 실행 : Mono, Flux
 
 5. `**ApplicationRunner**` 인터페이스를 구현한 빈을 `Application Context`에서 찾아서 실행 - ex02.ExApplication
